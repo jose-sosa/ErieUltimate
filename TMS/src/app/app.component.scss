@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background: rgb(255, 195,11);
+    height: 12vh;
+    // padding: 0 5em;
+}
+
+
+
+#main-window {
+    
+
+}
+
+#main { 
+    background: green;
+    height: 78vh;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+
+
+
+#left-side {
+    background: peru;
+    height: 78vh;
+}
+
+#footer {
+    background: yellow;
+    height: 10vh;
+}

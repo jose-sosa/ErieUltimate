@@ -1,5 +1,17 @@
-.container {
-    h1 {
-        color: red;
+#nav {
+    display: flex;
+    section {
+        padding: 1vh 0;
+        text-align: center;
+    }
+    div {
+        display: flex;
+        align-items: center;
+    }
+    div a {
+        padding-left: 10%;
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 18px;
     }
 }
