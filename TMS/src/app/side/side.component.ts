@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TransportService } from '../services/transport.service';
 
 @Component({
   selector: 'app-side',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideComponent implements OnInit {
 
-  constructor() { }
+  current: String = "viewTournaments";
+
+  constructor(private transport: TransportService) { 
+
+  }
 
   ngOnInit() {
+    
+    this.transport.currentSidebar.subscribe(data => {
+      this.current =  data.toString();
+    })
+
   }
 
 }

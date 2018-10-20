@@ -1,1 +1,9 @@
-<h4>Hey ther</h4>
+
+
+<div *ngIf="current == 'viewTournaments'"> 
+  <app-sidebartournaments></app-sidebartournaments>
+</div>
+
+<div *ngIf="current == 'viewTourney'"> 
+    <app-sidebartourney></app-sidebartourney>
+  </div>

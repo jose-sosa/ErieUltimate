@@ -1,17 +1,17 @@
 <h1 class="head">Erie Ultimate</h1>
 <hr>
 <section class="row">
-  <div class="col-md-4" id="previous">
+  <div class="col-md-4 tourney-brief" (click)="switchToTourney(this)" id="previous">
     <h3>Last Tournament</h3>
     <app-tourney></app-tourney>
   </div>
   
-  <div  class="col-md-4" id="upcoming">
+  <div  class="col-md-4 tourney-brief"  (click)="switchToTourney(this)"  id="upcoming">
     <h3>Upcoming Tournament</h3>
     <app-tourney></app-tourney>
   </div>
   
-  <div  class="col-md-4" id="following">
+  <div  class="col-md-4 tourney-brief"  (click)="switchToTourney(this)"  id="following">
       <h3>Following Tournament</h3>
       <app-tourney></app-tourney>
     </div>

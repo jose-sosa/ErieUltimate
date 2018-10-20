@@ -7,3 +7,24 @@
     text-align: center;
     letter-spacing: 10px;
 }
+
+.row  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tourney-brief {
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    max-width: 350px;
+    min-height: 400px;
+    background: rgb(214, 149, 6);
+    color: white;
+}
+
+.tourney-brief:hover {
+    border: 2px solid green;
+    cursor: pointer;
+    background: rgb(189, 17, 17);
+}

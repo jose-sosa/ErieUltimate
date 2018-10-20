@@ -12,10 +12,16 @@ import { TournamentsComponent } from './tournaments/tournaments.component';
 import { TourneyComponent } from './tourney/tourney.component';
 import { SidebartournamentsComponent } from './side/sidebartournaments/sidebartournaments.component';
 
+import { TransportService } from './services/transport.service';
+import { ViewTourneyComponent } from './tournaments/view-tourney/view-tourney.component';
+import { SidebartourneyComponent } from './side/sidebartourney/sidebartourney.component'; 
+
 
 const appRoutes: Routes = [
+  // {path: '',  component: TournamentsComponent},
   {path: 'tournaments', component: TournamentsComponent},
-  {path: '', component: TournamentsComponent},
+  {path: 'tourney', component: ViewTourneyComponent},
+  { path: '',     redirectTo: '/tournaments', pathMatch: 'full' }
 
 ];
 
@@ -28,15 +34,17 @@ const appRoutes: Routes = [
     SideComponent,
     TournamentsComponent,
     TourneyComponent,
-    SidebartournamentsComponent
+    SidebartournamentsComponent,
+    ViewTourneyComponent,
+    SidebartourneyComponent
   ],
   imports: [
     RouterModule.forRoot(
-      appRoutes, {enableTracing: true}
+      appRoutes, {enableTracing: false}
     ),
     BrowserModule
   ],
-  providers: [],
+  providers: [TransportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
